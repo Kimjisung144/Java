@@ -20,6 +20,12 @@ public class eceer {
 		double area = pizza.getArea();
 		System.out.println(pizza.name+" "+pizza.getArea());
 		
+		eceer dounet;
+		dounet = new eceer();
+		dounet.name="´ë°¡¸®";
+		dounet.re=10;
+		double area = dounet.getArea();
+		System.out.println(dounet.name+dounet.getArea());
 	}
 
 }
