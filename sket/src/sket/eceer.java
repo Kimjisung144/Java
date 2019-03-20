@@ -24,7 +24,7 @@ public class eceer {
 		dounet = new eceer();
 		dounet.name="´ë°¡¸®";
 		dounet.re=10;
-		double area = dounet.getArea();
+		double area1 = dounet.getArea();
 		System.out.println(dounet.name+dounet.getArea());
 	}
 
