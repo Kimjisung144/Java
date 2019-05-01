@@ -3,26 +3,26 @@ package chapter04_ex12;
 import java.util.Scanner;
 
 class CurrencyConverter {
-	private static double rate; // 1$¿¡ ´ëÇÑ ¿øÈ­
+	private static double rate; 
 	public static double toDollar(double won) {
-		return won/rate; // ¿øÈ­¸¦ ´Ş·¯·Î º¯È¯
+		return won/rate;
 	}
 	public static double toKWR(double dollar) {
-		return dollar * rate; // ´Ş·¯¸¦ ¿øÈ­·Î º¯È¯
+		return dollar * rate;
 	}
 	public static void setRate(double r) {
-		rate = r; // È¯À² ¼³Á¤. ¿ø/$1
+		rate = r;
 	}
 }
 public class StaticMember {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("È¯À²(1´Ş·¯)>> ");
+		System.out.print("í™˜ìœ¨(1ë‹¬ëŸ¬)>> ");
 		double rate = scanner.nextDouble();
-		CurrencyConverter.setRate(rate); 	// ¹Ì±¹ ´Ş·¯ È¯À² ¼³Á¤
-		System.out.println("¹é¸¸¿øÀº $" + CurrencyConverter.toDollar(1000000) + 
-								  "ÀÔ´Ï´Ù.");
-		System.out.println("$100´Â " + CurrencyConverter.toKWR(100) + "¿øÀÔ´Ï´Ù.");
+		CurrencyConverter.setRate(rate);
+		System.out.println("ë°±ë§Œì›ì€ $" + CurrencyConverter.toDollar(1000000) + 
+								  "ì…ë‹ˆë‹¤.");
+		System.out.println("$100ëŠ” " + CurrencyConverter.toKWR(100) + "ì›ì…ë‹ˆë‹¤.");
 		scanner.close();
 	}
 }
