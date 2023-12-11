@@ -1,10 +1,9 @@
-public class Bird extends Animal{
-    public void fly()
+package good;
+
+public class Animal {
+    public void walk()
     {
-        System.out.println("날을수있음");
-    }
-    public void sing()
-    {
-        System.out.println("노래부를수있음");
+        System.out.println("걸을수 있음");
     }
 }
+
