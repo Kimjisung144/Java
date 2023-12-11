@@ -1,4 +1,4 @@
-package good;
+package src;
 
 public interface Animal {
     public abstract void walk();
