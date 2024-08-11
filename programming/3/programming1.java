@@ -1,41 +1,16 @@
 import java.util.Scanner;
 
-public class Main
-{
-    public static void main(String[] args)
-    {
+public class Main {
+    public static void main(String[] args) {
+        String[] st = {"one","two","three","four","five","six","seven","eigh","nine","ten","other"};   //문자열 여러개 저장을 위해 배열 생성
         Scanner sc = new Scanner(System.in);
-        int num;
-        num = sc.nextInt();
-        switch (num)
+        int i = 0; //입력받기 위한 변수
+        i = sc.nextInt(); // 입력받기
+        if(i > 0 && i < 10)
         {
-            case 1:
-                System.out.println("one");
-                break;
-            case 2:
-                System.out.println("two");
-                break;
-            case 3:
-                System.out.println("three");
-                break;
-            case 4:
-                System.out.println("four");
-                break;
-            case 5:
-                System.out.println("five");
-                break;
-            case 6:
-                System.out.println("six");
-                break;
-            case 7:
-                System.out.println("seven");
-                break;
-            case 8:
-                System.out.println("eight");
-                break;
-            case 9:
-                System.out.println("nine");
-                break;
+            System.out.println(st[i-1]); //출력
+        }else{
+            System.out.println(st[10]); //1~9까지 숫자가 아닐시 출력
         }
     }
 }
