@@ -25,16 +25,16 @@ public class Main {
     }
     public static void main(String[] args)
     {
-        String moon;                           // 연산자 저장용 변수
-        double num_one = 0;                    // 피연산자1 저장용 변수
-        double num_two = 0;                    // 피연산자2 저장용 변수
+        String moon;                             // 연산자 저장용 변수
+        double num_one = 0;                      // 피연산자1 저장용 변수
+        double num_two = 0;                      // 피연산자2 저장용 변수
         System.out.println("연산을 입력하시오:"); // 연산자 입력하라는 안내문 출력
 
-        Scanner sc = new Scanner(System.in);           // 입력받기 위한 Scanner객체 생성
-        moon = sc.next();                              // 연산자 입력받기 
+        Scanner sc = new Scanner(System.in);             // 입력받기 위한 Scanner객체 생성
+        moon = sc.next();                                // 연산자 입력받기 
         System.out.println("피연산자 2개를 입력하시오:");  // 피연산자 입력하라는 안내문 출력
-        num_one = sc.nextDouble();                     // 피연산자1 입력받기
-        num_two = sc.nextDouble();                     // 피연산자2 입력받기
+        num_one = sc.nextDouble();                       // 피연산자1 입력받기
+        num_two = sc.nextDouble();                       // 피연산자2 입력받기
 
         if(moon.equals("+"))                               // 연산자가 +일 경우(문자 비교에 경우 주소를 비교하기에 equals메소드를 사용해야 비교가능) 
         {
