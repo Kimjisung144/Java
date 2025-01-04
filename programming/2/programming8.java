@@ -4,7 +4,7 @@ public class Main{
 
     public static double volume(double r) //구의 부피를 구하기 위한 메소드
     {
-        return (4.0/3.0)*(Math.PI *(r*r*r)); //4/3 *파이 *r^2;
+        return (4.0/3.0)*(Math.PI *(r*r*r)); //4/3 *파이 *r^3;
     }
 
     public static void main(String[] args)
