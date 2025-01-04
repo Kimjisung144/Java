@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main{
 
-    public static double mile_to_km(double mile) //마일에서 킬로미터로 변환
+    public static double mile_to_km(double mile) //마일에서 킬로미터로 변환 메소드
     {
         return (double) (mile*1.609); //식
     }
