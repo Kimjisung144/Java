@@ -1,15 +1,18 @@
-// 1~100까지 수중에 3의배수와 4의 배수를 더하는 프로그램 
-public class Main {
+import java.util.Scanner;
+
+public class Main
+{
+
     public static void main(String[] args)
     {
-        int sum = 0;
-      for(int i=1;i<=100;i++) // 1~100까지 반복
-      {
-          if(i % 3 == 0 || i % 4 == 0) // 3의 배수 또는 4의 배수 일때
-          {
-              sum = sum + i; // i값 기존에 더하고 있던 변수에 더하기
-          }
-      }
-        System.out.println("3또는 4의 배수의 합="+sum); // 합 출력
+        int sum=0; //합을 구하기 위한 변수
+        for(int i=1; i<=100; i++) //1~100까지
+        {
+            if((i%3==0) || (i%4==0) ) //숫자가 3의 배수인지 4의 배수인지 확인 하나라도 해당되면 참
+            {
+                sum = sum+i; //그 숫자 더하기
+            }
+        }
+        System.out.println("3 또는 4의 배수의 합 = "+sum); // 결과 출력
     }
 }
