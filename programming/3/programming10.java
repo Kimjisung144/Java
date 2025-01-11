@@ -1,33 +1,32 @@
-//배열  합과 최대값 구하기
-import java.util.Arrays;
-import java.util.Scanner;
-
-public class Main {
-    public static double max(double[] listy) //파라미터인 배열 주소 가져오기
+public class Main
+{
+    public static double sum(double[] list) //배열의 합을 구하는 메소드
     {
-        int max = 0;                          // 최대값이 있는 인덱스 저장용 변수
-        for(int i = 0; i < listy.length; i++) // 배열을 다 비교하기 위해 배열길이 만큼 반복
+        double sum = 0.0;    // 합을 저장하는 변수
+        for(double i : list) //리스트에 있는거 다 돌아가면서 i에 적용
         {
-            if(listy[max] < listy[i])         // 만약 현재 배열에 max값보다 현재 비교 값이 크면  
+            sum = sum + i;   //합을 더해서 저장하기
+        }
+        return sum;          //합을 반환하기
+    }
+
+    public static double max(double[] list) //리스트중 최대값 구하는 메소드
+    {
+        double max = 0;    // 최대값 저장하기 위한 변수
+        for(double e:list) // 리스트에 있는거 다 돌아가면서 i에 적용
+        {
+            if(e > max)    // e값이 현재 max값보다 클때
             {
-                max = i;                      // max인덱스 현재 비교 인덱스로 변경하기
+                max = e;   // max값은 e값이 됨
             }
         }
-        return listy[max];                    // 최대값 반환하기
+        return max;        //max값 반환하기 
     }
+
     public static void main(String[] args)
     {
-        double[] list = {4.0,2.0,3.0,4.0};    // 배열 초기화
-        double sum=0;                         // 합을 저장용 변수
-        for(double i:list)                    // 배열 하나하나 돌아가며 값 가져오기
-        {
-            System.out.print(i+" ");          // 배열 값 출력
-        }
-        for(double j:list)
-        {
-            sum = sum+j;                      // 배열의 합구하기 
-        }
-        System.out.println("\n합은:"+sum);     // 합 출력
-        System.out.println(max(list));        // 최대값구하는 함수 호출하고 반환값 출력
+        double[] list = {1.0, 2.0, 3.0, 4.0};   // 리스트 저장
+        System.out.println("합은 " + sum(list)); // 합 메소드 호출하고 반환된 값 출력
+        System.out.println("최대값은 " + max(list)); //최대값 메소드 호출하고 반환된 값 출력
     }
 }
