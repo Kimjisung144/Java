@@ -42,6 +42,6 @@ public class Main
         write(list);                                 //성적적는 메소드 호출
 
         System.out.println("합계: " + sum(list)); //합계 구하는 메소드 호출하고 결과 출력
-        System.out.println("평균: " + avg(list,sum(list))); 평균 구하는 메소드 호출하고 결과 출력
+        System.out.println("평균: " + avg(list,sum(list)));// 평균 구하는 메소드 호출하고 결과 출력
     }
 }
